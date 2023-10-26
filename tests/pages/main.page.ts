@@ -23,8 +23,8 @@ export class MainPage
 
   constructor(page: Page) { 
     this.page = page
-    this.signInBtn = this.page.locator('a', { hasText: 'Sign in' })
-    this.signOutBtn = this.page.locator('a', { hasText: 'Sign out' })
+    this.signInBtn = this.page.locator('a.login')
+    this.signOutBtn = this.page.locator('a.logout')
     this.OverviewBtn = this.page.locator('a.overview')
     this.DownloadBtn = this.page.locator('a.download')
     this.ActivityBtn = this.page.locator('a.activity')
@@ -41,86 +41,8 @@ export class MainPage
   }
 
   //Actions
-  async maingoto() { 
+  async goto() { 
     await this.page.goto('https://www.redmine.org')
-  }
-
-  async clickSignInBtn() {  
-    await this.signInBtn.click()
-  }
-
-  async clickSignOutBtn() {
-    await this.signOutBtn.click()
-  }
-
-  async signInConf() {
-    await expect(this.signOutBtn).toBeVisible()
-  }
-
-  async signOutConf() {
-    await expect(this.signOutBtn).toBeVisible() 
-  }
-
-  async overviewBtnConf() { 
-    await this.OverviewBtn.click()
-    await this.closeAdIfVisible()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects/redmine')
-  }
-
-  async downloadBtnConf() { 
-    await this.DownloadBtn.click()
-    await this.closeAdIfVisible()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects/redmine/wiki/Download')
-  }
-
-  async activityBtnConf() { 
-    await this.ActivityBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects/redmine/activity')
-  }
-
-  async roadmapBtnConf() { 
-    await this.RoadmapBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects/redmine/roadmap')
-  }
-
-  async issuesBtnConf() { 
-    await this.IssuesBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects/redmine/issues')
-  }
-
-  async newsBtnConf() { 
-    await this.NewsBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects/redmine/news')
-  }
-
-  async wikiBtnConf() { 
-    await this.WikiBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects/redmine/wiki')
-  }
-
-  async forumsBtnConf() { 
-    await this.ForumsBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects/redmine/boards')
-  }
-
-  async repositoryBtnConf() { 
-    await this.RepositoryBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects/redmine/repository')
-  }
-
-  async homeBtnConf() {
-    await this.HomeBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/')
-  }
-
-  async helpBtnConf() {
-    await this.HelpBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/guide')
-  }
-
-  async projectsBtnConf() {
-    await this.ProjectsBtn.click()
-    await expect(this.page).toHaveURL('https://www.redmine.org/projects')
   }
 
   async closeAdIfVisible() {
