@@ -10,7 +10,7 @@ test("Sign in with valid creds", async ({ page }) => {
   await mainpage.signInBtn.click();
   await signinpage.enterCredDet();
   await signinpage.logInBtn.click();
-  await expect(mainpage.signOutBtn).toBeVisible();
+  await expect(mainpage.LoggedInAs).toBeVisible();
 });
 
 test("Sign in with invalid creds", async ({ page }) => {
