@@ -17,11 +17,13 @@ export class MainPage {
   readonly ProjectsBtn: Locator;
   readonly HelpBtn: Locator;
   readonly AdCloseBtn: Locator;
+  readonly LoggedInAs: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.signInBtn = this.page.locator("a.login");
     this.signOutBtn = this.page.locator("a.logout");
+    this.LoggedInAs = this.page.locator("#loggedas")
     this.OverviewBtn = this.page.locator("a.overview");
     this.DownloadBtn = this.page.locator("a.download");
     this.ActivityBtn = this.page.locator("a.activity");
