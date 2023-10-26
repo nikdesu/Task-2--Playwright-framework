@@ -1,4 +1,6 @@
 import { expect, Locator, Page  } from "@playwright/test"
+import credentials from "../../credentials.json"
+import { faker } from '@faker-js/faker'
 
 export class SignInPage 
 { 
@@ -18,20 +20,12 @@ export class SignInPage
 
   //Actions
   async enterCredDet() {
-    await this.loginTextbox.fill("test_case123")
-    await this.passTextbox.fill("test1234")
+    await this.loginTextbox.fill(credentials.username)
+    await this.passTextbox.fill(credentials.password)
   }
 
   async enterINVCredDet() {
-    await this.loginTextbox.fill("invalid@пошта.ком")
-    await this.passTextbox.fill("invalidпароль123")
-  }
-
-  async clickSignInBtn() {  
-    await this.logInBtn.click()
-  }
-
-  async invalidCredsConf() {
-    await expect(this.invalidCredsErr).toBeVisible()
+    await this.loginTextbox.fill(faker.internet.email())
+    await this.passTextbox.fill(faker.internet.password())
   }
 }
