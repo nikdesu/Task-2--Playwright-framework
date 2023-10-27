@@ -23,6 +23,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About the project
 This repository contains a test suite for a web application, written using Playwright and TypeScript. Playwright is a powerful and versatile automation tool for end-to-end testing of web applications, and TypeScript enhances code quality and provides static type checking.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting started
@@ -31,6 +32,7 @@ This repository contains a test suite for a web application, written using Playw
 Before running the tests, make sure you have the following dependencies installed:
 
 Node.js: Install Node.js from https://nodejs.org/en
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Installation
 
@@ -50,6 +52,7 @@ Node.js: Install Node.js from https://nodejs.org/en
    ```bash
    npm install
    ```
+   <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- USAGE EXAMPLES -->
 ## Running test
 
@@ -58,10 +61,12 @@ To run the test suite, execute the following command:
 ```bash
 npm run run-all-tests
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- WRITING TESTS -->
 ## Writing tests 
 You can start writing your own tests in the tests directory. Follow the Playwright API documentation to interact with your web application. Ensure that your test files are written in TypeScript (.ts extension) and located in the tests directory.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- TEST REPORTS -->
 ## Test reports 
@@ -70,3 +75,4 @@ The HTML Reporter shows you a full report of your tests allowing you to filter t
 ```bash
 npx playwright show-report
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
