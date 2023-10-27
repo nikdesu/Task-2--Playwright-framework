@@ -1,4 +1,5 @@
 # Task 2 Playwright framework
+<a name="readme-top"></a>
 
 <!-- TABLE OF CONTENTS -->
 <details>
