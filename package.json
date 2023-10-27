@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "run-all-tests": "playwright test"
+  },
   "keywords": [],
-  "author": "",
+  "author": "nikdesu",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^8.2.0",
