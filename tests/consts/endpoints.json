@@ -1,0 +1,13 @@
+{
+    "overview": "/redmine",
+    "download": "/Download",
+    "activity": "/activity",
+    "roadmap": "/roadmap",
+    "issues": "/issues",
+    "news": "/news",
+    "wiki": "/wiki",
+    "forums": "/boards",
+    "repository": "/repository",
+    "help": "/guide",
+    "projects": "/projects"
+}

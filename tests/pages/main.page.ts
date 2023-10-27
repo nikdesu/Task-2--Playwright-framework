@@ -1,4 +1,4 @@
-import { expect, type Page, type Locator, errors } from "@playwright/test";
+import { type Page, type Locator, errors } from "@playwright/test";
 
 export class MainPage {
   readonly page: Page;
